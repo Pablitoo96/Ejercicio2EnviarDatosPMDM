@@ -13,16 +13,16 @@
         android:theme="@style/Theme.Ejercicio2EnviarDatosPMDM"
         tools:targetApi="31">
         <activity
-            android:name=".MotosActivity"
+            android:name=".actividades.MotosActivity"
             android:exported="false" />
         <activity
-            android:name=".BicisActivity"
+            android:name=".actividades.BicisActivity"
             android:exported="false" />
         <activity
-            android:name=".CochesActivity"
+            android:name=".actividades.CochesActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".actividades.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

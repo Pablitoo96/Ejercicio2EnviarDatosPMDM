@@ -4,77 +4,95 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".actividades.MainActivity">
 
     <TextView
-        android:id="@+id/txtVBicis"
+        android:id="@+id/txtContarBicis"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="BICIS"
+        android:text="BICIS: 0"
+        android:textColor="#673AB7"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnCoches2" />
+        app:layout_constraintTop_toBottomOf="@+id/btnCrearMoto" />
 
     <Button
-        android:id="@+id/btnCoches3"
+        android:id="@+id/btnCrearCoches"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="16dp"
         android:text="COCHES"
+        app:icon="@android:drawable/ic_input_add"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtVCoches" />
+        app:layout_constraintTop_toBottomOf="@+id/txtContarCoches" />
 
     <TextView
-        android:id="@+id/txtVMotos"
+        android:id="@+id/txtContarMotos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="MOTOS"
+        android:text="MOTOS: 0"
+        android:textColor="#673AB7"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnCoches3" />
+        app:layout_constraintTop_toBottomOf="@+id/btnCrearCoches" />
 
     <Button
-        android:id="@+id/btnCoches2"
+        android:id="@+id/btnCrearMoto"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:text="MOTOS"
+        app:icon="@android:drawable/ic_input_add"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtVMotos" />
+        app:layout_constraintTop_toBottomOf="@+id/txtContarMotos" />
 
     <TextView
-        android:id="@+id/txtVCoches"
+        android:id="@+id/txtContarCoches"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
-        android:text="COCHES"
+        android:layout_marginTop="50dp"
+        android:text="COCHES: 0"
+        android:textColor="#673AB7"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/txtResultadoLista" />
 
     <Button
-        android:id="@+id/btnCoches"
+        android:id="@+id/btnCrearBici"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:text="BICIS"
+        app:icon="@android:drawable/ic_input_add"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtVBicis" />
+        app:layout_constraintTop_toBottomOf="@+id/txtContarBicis" />
+
+    <TextView
+        android:id="@+id/txtResultadoLista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Resultado Lista"
+        android:textColor="#673AB7"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

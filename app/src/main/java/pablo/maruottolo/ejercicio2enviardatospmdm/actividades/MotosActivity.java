@@ -1,8 +1,10 @@
-package pablo.maruottolo.ejercicio2enviardatospmdm;
+package pablo.maruottolo.ejercicio2enviardatospmdm.actividades;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import pablo.maruottolo.ejercicio2enviardatospmdm.R;
 
 public class MotosActivity extends AppCompatActivity {
 
