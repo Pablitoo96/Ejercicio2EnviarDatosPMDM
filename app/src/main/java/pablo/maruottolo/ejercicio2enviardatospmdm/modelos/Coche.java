@@ -1,6 +1,8 @@
 package pablo.maruottolo.ejercicio2enviardatospmdm.modelos;
 
-public class Coche {
+import java.io.Serializable;
+
+public class Coche implements Serializable {
     private String marca;
     private String modelo;
     private String color;

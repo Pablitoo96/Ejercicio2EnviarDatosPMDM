@@ -30,42 +30,35 @@
         android:textColor="#673AB7" />
 
     <EditText
-        android:id="@+id/txtColorBici"
+        android:id="@+id/txtPulgadasBici"
         android:layout_width="379dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Color"
-        android:textColor="#673AB7" />
-
-    <EditText
-        android:id="@+id/txtModeloBici"
-        android:layout_width="379dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="30dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Modelo"
+        android:text="Pulgadas"
         android:textColor="#673AB7" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
         android:orientation="horizontal">
 
         <Button
             android:id="@+id/btnCancelarBici"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="CANCELAR" />
 
         <Button
             android:id="@+id/btnCrearBici"
-            android:layout_width="93dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="2"
             android:text="CREAR"
             android:textColor="#EDEDED" />
     </LinearLayout>

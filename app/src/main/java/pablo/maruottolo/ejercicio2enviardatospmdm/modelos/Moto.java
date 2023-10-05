@@ -1,6 +1,8 @@
 package pablo.maruottolo.ejercicio2enviardatospmdm.modelos;
 
-public class Moto {
+import java.io.Serializable;
+
+public class Moto implements Serializable {
     private String marca;
     private String modelo;
     private int cilindrada;

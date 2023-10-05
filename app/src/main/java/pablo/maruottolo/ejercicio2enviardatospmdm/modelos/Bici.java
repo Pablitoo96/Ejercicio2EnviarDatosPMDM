@@ -1,6 +1,8 @@
 package pablo.maruottolo.ejercicio2enviardatospmdm.modelos;
 
-public class Bici {
+import java.io.Serializable;
+
+public class Bici implements Serializable {
     private String marca;
     private int pulgada;
 

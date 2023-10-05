@@ -1,12 +1,18 @@
 package pablo.maruottolo.ejercicio2enviardatospmdm.actividades;
 
+import androidx.activity.result.ActivityResult;
+import androidx.activity.result.ActivityResultCallback;
 import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContract;
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -44,6 +50,33 @@ public class MainActivity extends AppCompatActivity {
 
         inicializarVariables();
 
+        btnCrearCoche.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                laucherCoches.launch(new Intent(MainActivity.this,CochesActivity.class));
+            }
+        });
+
+        laucherCoches = registerForActivityResult(
+                new ActivityResultContracts.StartActivityForResult(),
+                new ActivityResultCallback<ActivityResult>() {
+                    @Override
+                    public void onActivityResult(ActivityResult result) {
+                        if(result.getResultCode() == RESULT_OK){
+                            if(result.getData() != null && result.getData().getExtras() != null){
+                                Coche coche = (Coche) result.getData().getExtras().getSerializable("COCHE");
+                                listaCoche.add(coche);
+                                txtCantidadCoches.setText("COCHES: " + listaCoche.size());
+                            }else{
+                                Toast.makeText(MainActivity.this,"No se han pasado los datos",Toast.LENGTH_LONG).show();
+                            }
+                        }else{
+                            Toast.makeText(MainActivity.this,"VENTANA CENCELADA",Toast.LENGTH_LONG).show();
+                        }
+
+                    }
+                }
+        );
     }
 
 
